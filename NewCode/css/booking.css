@@ -1,0 +1,141 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("../img/background.jpg");
+  
+    /* Full height */
+    height: 40%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .flightdetails{
+      text-align: center;
+  }
+
+  .flightdetails div{
+      margin-top: 3%;
+  }
+  .flightdetails div b{
+      font-size: 50px;
+  }
+
+ .flightnumber{
+     font-size: 30px;
+     font-weight: bold;
+ }
+ .timings{
+     font-size: 16px;
+ }
+ .contactdetails{
+     text-align: center;
+     margin-top: 30px;
+     background-color: #fff;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     padding: 10px;
+ }
+
+ .contactdetails input{
+     font-size: 20px;
+     padding: 10px;
+     margin-top: 15px;
+
+ }
+ .contactdetails input:focus{
+border: #4fa3e3 2px solid;
+
+}
+
+.contactdetails button{
+    margin-top: 15px;
+    width: 100%;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   font-size: 15px;
+   background-color: #4fa3e3;
+   border: #4fa3e3 3px solid;
+   color: #fff;
+   border-radius: 2px;
+}
+
+.userdetails{
+    margin-top: 30px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+    padding: 14px;
+    
+}
+
+.userdetails input{
+    font-size: 16px;
+    padding: 7px;
+    margin-top: 15px;
+
+}
+
+.userdetails input:focus{
+    border: #4fa3e3 2px solid;
+
+}
+
+.adduserbtn{
+    margin-top: 12px;
+    width: 100%;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   font-size: 12px;
+   background-color: #4fa3e3;
+   border: #4fa3e3 3px solid;
+   color: #fff;
+   border-radius: 2px;
+
+}
+
+.deluserbtn{
+    margin-top: 12px;
+    width: 100%;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   font-size: 12px;
+   background-color: #e34f4f;
+   border: #e34f4f 3px solid;
+   color: #fff;
+   border-radius: 2px;
+
+}
+
+.paymentbox{
+    margin-top: 30px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+    padding: 14px;
+    margin-left: 20px;
+
+}
+
+.paymentbox b{
+    font-size: 20px;
+}
+
+.paymentbox div{
+    font-size: 16px;
+}
+
+.paymentbutton{
+    margin-top: 12px;
+   
+   padding-top: 5px;
+   padding-bottom: 5px;
+   font-size: 12px;
+   background-color: #4fa3e3;
+   border: #4fa3e3 3px solid;
+   color: #fff;
+   border-radius: 2px;
+
+}
