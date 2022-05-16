@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body {
+    font-family: 'Poppins';
+}
+.navbar{
+    background-color: #1B1B3A;
+}
+.searchboxnav{
+    
+    border-radius: 50px;
+    background-color: #C4C4C4;
+    margin-left: 20px;
+}
+.searchboxnav:focus{
+    border-radius: 0px;
+    background-color: #4b4e52;
+    border: 0px;
+    opacity: 0.8;
+    border-bottom: 3px #fff solid;
+    color:#fff;
+    transition: 0.5s;
+
+}
+.navbar div i{
+  color: #fff;
+  cursor: pointer;
+  
+}
+.nav-link{
+    margin-left: 10px;
+}
+.nav-link:hover{
+    background-color: #B20D30;
+    transition: 0.3s;
+    color: #fff;
+
+}
+.activelink{
+    border: 2px #B20D30 solid;
+}
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.bonvoagecards:hover{
+    background-color: #B20D30;
+    transition: 0.3s;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  .top-destinations{
+    color:#4b4e52;
+  }
+
+  .whyus{
+    color: #B20D30;
+    font-size: 65px;
+  }
+
+  .container{
+    margin-top: 70px;
+  }
+
+  .inputfield{
+    border-radius: 0px;
+    background-color: #4b4e52;
+    border: 0px;
+    opacity: 0.8;
+    border-bottom: 3px #fff solid;
+    color:#fff;
+  }
+  
+  .btn{
+    width: 100%;
+    border-radius: 50px;
+    border: #B20D30 2px solid;
+    color: #B20D30;
+  }
+
+  .btn:hover{
+    width: 100%;
+    border-radius: 0px;
+    border: #fff 2px solid;
+    color: #fff;
+    background-color: #B20D30;
+    transition: 0.5s;
+
+  }
+
+  .formdivison{
+    color: #fff;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .loginwithgoogle{
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
