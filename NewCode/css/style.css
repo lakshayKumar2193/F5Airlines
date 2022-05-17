@@ -1,3 +1,5 @@
+
+
 .section {
 	position: relative;
 	height: 100vh;
@@ -18,6 +20,11 @@
 	background-size: cover;
 	background-position: center;
 	color: #191a1e;
+}
+
+.modal{
+	font-family: 'Lato', sans-serif;
+
 }
 
 .booking-form {
@@ -192,3 +199,75 @@
 	font-size: 22px;
 	color: #191a1e;
 }
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body {
+    font-family: 'Poppins';
+
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+	display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .example {
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+  }
+.navbar{
+    background-color: #1B1B3A;
+	font-size: 16px;
+	border-radius: 0px;
+	cursor: pointer;
+}
+
+.navbar img{
+	height: 45px;
+	width: 45px;
+
+}
+.searchboxnav{
+	font-size: 16px;
+    
+    border-radius: 50px;
+    background-color: #C4C4C4;
+    margin-left: 20px;
+}
+.searchboxnav:focus{
+    border-radius: 0px;
+    background-color: #4b4e52;
+    border: 0px;
+    opacity: 0.8;
+    border-bottom: 3px #fff solid;
+    color:#fff;
+    transition: 0.5s;
+
+}
+.navbar div i{
+  color: #fff;
+  cursor: pointer;
+  
+}
+.nav-link{
+    margin-left: 10px;
+}
+.nav-link:hover{
+    background-color: #4FA3E3;
+    transition: 0.3s;
+    color: #fff;
+
+}
+.activelink{
+    border: 3px #4FA3E3 solid;
+}
+
+.signup{
+	background-color: #4FA3E3;
+	border-radius: 3px;
+    color: #fff;
+
+}
+
+
+

@@ -19,7 +19,7 @@
 
     <!-- Custom stlylesheet -->
     <link type="text/css" rel="stylesheet" href="css/style.css" />
-    <link type="text/css" rel="stylesheet" href="css/usertrips.css" />
+    <link type="text/css" rel="stylesheet" href="css/updateuser.css" />
 
 
 </head>
@@ -54,7 +54,7 @@
                         </li>
                     </div>
                     <div class="col">
-                        <li class="nav-item  activelink">
+                        <li class="nav-item">
                             <a class="nav-link" href="usertrips.html">Bookings
 
                             </a>
@@ -70,7 +70,7 @@
 
                 
                     <div class="col">
-                        <li class="nav-item">
+                        <li class="nav-item activelink">
                             <a class="nav-link" href="updateuser.html">Username
 
                             </a>
@@ -96,7 +96,7 @@
         <div class="row heading">
 
             <div class="col-md-12 head">
-                <b>Your Trip Details</b><br>
+                <b>Update User</b><br>
                
             </div>
             
@@ -109,37 +109,59 @@
 
     </div>
     <div class="container table">
-         <section class="bg-light p-5">
-        <h3 class="pb-2">Responsive Table</h3>
-        <div class="table-responsive" id="no-more-tables">
-            <table class="table bg-white">
-                <thead class="bg-dark text-light">
-                    <tr>
-                        <th>Booking ID</th>
-                        <th>PNR</th>
-                        <th>Passenger</th>
-                        <th>Contact</th>
-                        <th>Date</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-title="Booking ID">Alisha</td>
-                        <td data-title="PNR">Roy</td>
-                        <td data-title="Passengers">20</td>
-                        <td data-title="Contact">Kerala</td>
-                        <td data-title="Date">abc@gmail.com</td>
-                        <td data-title="Action">
-                            <button class="btn btn-warning">Rate</button>
-                            <button class="btn btn-primary">Book Again</button>
-
-                        </td>
-                    </tr>
-
-                </tbody>
-            </table>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 float-end"> <img src="img/avtar.png"/>
+       
+            
+                
+            </div>
+            <div class="col-md-4">
+                <input type="file" class="fileupload" placeholder="Upload Image"/>
+            </div>
+            <div class="col-md-1"></div>
         </div>
+       
+        <div class="row">
+            <form action="/action_page.php">
+                
+            <div class="col-md-6 mr-2">
+                
+                    <div class="mb-3 mt-3">
+                      <label for="email">Name:</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    </div>
+                    <div class="mb-3">
+                      <label for="pwd">Phone Number:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pwd">Age</label>
+                        <input type="number" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                      </div>
+                    
+                    
+                 
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3 mt-3">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="pwd">Category</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                  </div>
+                  <div class="mb-3">
+                      <label for="pwd">UserID</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" readonly>
+                    </div>
+                <button type="submit" class="btn btn-primary float-end">Submit</button>
+
+            </div>
+        </form>
+        </div>
+
     </section>
         
         

@@ -2,6 +2,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: 'Lato', sans-serif;
+    font-size: 16px;
   }
   
   .bg {
@@ -22,7 +23,7 @@ body, html {
   }
 
   .flightdetails div{
-      margin-top: 3%;
+      margin-top: 5%;
   }
   .flightdetails div b{
       font-size: 50px;

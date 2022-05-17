@@ -2,6 +2,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: 'Lato', sans-serif;
+    font-size: 16px;
   }
   
   .bg {
@@ -22,6 +23,47 @@ body, html {
       font-size: 50px;
   }
 
-  .heading div b{
-      margin-top: 50px;
+  .head{
+      margin-top: 70px;
   }
+
+  .table{
+    margin-top: 30px;
+  }
+
+  @media only screen and (max-width:800px) {
+    #no-more-tables tbody,
+    #no-more-tables tr,
+    #no-more-tables td {
+        display: block;
+    }
+    #no-more-tables thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    #no-more-tables td {
+        position: relative;
+        padding-left: 50%;
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+    #no-more-tables td:before {
+        content: attr(data-title);
+        position: absolute;
+        left: 6px;
+        font-weight: bold;
+    }
+    #no-more-tables tr {
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+section{
+  font-size: 16px;
+}
+
+thead{
+  background-color: #4fa3e3;
+}
+

@@ -1,6 +1,7 @@
 .section {
 	position: relative;
 	height: 100vh;
+   
 }
 
 .section .section-center {
@@ -18,11 +19,13 @@
 	background-size: cover;
 	background-position: center;
 	color: #191a1e;
+    margin-top: 70px;
 }
 
 .topinfobar{
     background-color: #191a1e;
     width: 100%;
+   margin-top: 30px;
 
 }
 
