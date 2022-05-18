@@ -53,18 +53,18 @@
 			<nav id="menu" class="main-menu">
 				<ul>
 					<li><span><a href="index.html">Home</a></span></li>
-					<li><span><a href="#">PNR Status</a></span></li>
-					
+					<li><span><a href="pnrStatus.html">PNR Status</a></span></li>
+	
 	
 					<li><span><a href="#">User</a></span>
 						<ul>
-							<li><a href="#">Profile</a></li>
-							<li><a href="#">Bookings</a></li>
+							<li><a href="userprofile.html">Profile</a></li>
+							<li><a href="usertrips.html">Bookings</a></li>
 							<li><a href="#" class="text-danger">Logout</a></li>
 							
 						</ul>
 					</li>
-					<li><span><a href="#">Customer Support</a></span></li>
+					<li><span><a href="https://page.botpenguin.com/62847bcb9af888741185b976/62847b6f53e2b375f037cf68">Customer Support</a></span></li>
 	
 				
 	
@@ -96,18 +96,19 @@
 								Make sure they are accurate
 							</p>
 						</div>
+						<form action="#">
 						<div class="step">
 							<div class="row">
 							<div class="col-sm-6">
 								<div class="form-group">
 									<label>First name</label>
-									<input type="text" class="form-control" id="firstname_booking" name="firstname_booking">
+									<input type="text" class="form-control" id="firstname_booking" name="firstname_booking" required>
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="form-group">
 									<label>Last name</label>
-									<input type="text" class="form-control" id="lastname_booking" name="lastname_booking">
+									<input type="text" class="form-control" id="lastname_booking" name="lastname_booking" required>
 								</div>
 							</div>
 						</div>
@@ -115,13 +116,13 @@
 							<div class="col-sm-6">
 								<div class="form-group">
 									<label>Email</label>
-									<input type="email" id="email_booking" name="email_booking" class="form-control">
+									<input type="email" id="email_booking" name="email_booking" class="form-control" required>
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="form-group">
 									<label>Confirm email</label>
-									<input type="email" id="email_booking_2" name="email_booking_2" class="form-control">
+									<input type="email" id="email_booking_2" name="email_booking_2" class="form-control" required>
 								</div>
 							</div>
 						</div>
@@ -129,14 +130,14 @@
 							<div class="col-sm-6">
 								<div class="form-group">
 									<label>Telephone</label>
-									<input type="text" id="telephone_booking" name="telephone_booking" class="form-control">
+									<input type="text" id="telephone_booking" name="telephone_booking" class="form-control" required>
 								</div>
 								
 							</div>
 							<div class="col-sm-6">
 								<div class="form-group">
-									<label>Age</label>
-									<input type="text" id="telephone_booking" name="telephone_booking" class="form-control">
+									<label>Date of Birth</label>
+									<input type="date" id="age" name="age" class="form-control" required>
 								</div>
 								
 							</div>
@@ -150,6 +151,7 @@
 						</div>
 						
 						</div>
+					</form>
 						
 						<!--End step -->
 

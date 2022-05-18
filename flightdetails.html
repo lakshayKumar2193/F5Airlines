@@ -52,18 +52,18 @@
 			<nav id="menu" class="main-menu">
 				<ul>
 					<li><span><a href="index.html">Home</a></span></li>
-					<li><span><a href="#">PNR Status</a></span></li>
-					
+					<li><span><a href="pnrStatus.html">PNR Status</a></span></li>
+	
 	
 					<li><span><a href="#">User</a></span>
 						<ul>
-							<li><a href="#">Profile</a></li>
-							<li><a href="#">Bookings</a></li>
+							<li><a href="userprofile.html">Profile</a></li>
+							<li><a href="usertrips.html">Bookings</a></li>
 							<li><a href="#" class="text-danger">Logout</a></li>
 							
 						</ul>
 					</li>
-					<li><span><a href="#">Customer Support</a></span></li>
+					<li><span><a href="https://page.botpenguin.com/62847bcb9af888741185b976/62847b6f53e2b375f037cf68">Customer Support</a></span></li>
 	
 				
 	
@@ -96,13 +96,14 @@
 					<div id="filters_col">
 						<a data-toggle="collapse" href="#collapseFilters" aria-expanded="false" aria-controls="collapseFilters" id="filters_col_bt">Filters </a>
 						<div class="collapse show" id="collapseFilters">
+						<form action="#" method="get">
 							<div class="filter_type">
 								<h6>Sort By</h6>
 								<ul>
 									<div class="form-group">
 										
-										<select class="form-control" id="filterby">
-										  <option>--Choose--</option>
+										<select class="form-control" id="sortby" name="sortby">
+										 
 										  <option>Price</option>
 										  <option>Ratings</option>
 										  <option>Duration</option>
@@ -115,7 +116,7 @@
 							<div class="filter_type">
 								<h6>Date</h6>
 								<div class="form-group">
-									<input class="form-control" type="date" name="dates" placeholder="Depart">
+									<input class="form-control" type="date" name="dates" id="dates" placeholder="Depart">
 									
 								</div>
 							</div>
@@ -135,26 +136,28 @@
 								<ul>
 									<li>
 										<label>
-											<input type="checkbox" class="icheck">Superb 9+ <small>(25)</small>
+											<input type="checkbox" name="rating9" id="rating9" class="icheck">Superb 9+ <small>(25)</small>
 										</label>
 									</li>
 									<li>
 										<label>
-											<input type="checkbox" class="icheck">Very Good 8+ <small>(26)</small>
+											<input type="checkbox"  name="rating8" id="rating8" class="icheck">Very Good 8+ <small>(26)</small>
 										</label>
 									</li>
 									<li>
 										<label>
-											<input type="checkbox" class="icheck">Good 7+ <small>(25)</small>
+											<input type="checkbox"  name="rating7" id="rating7" class="icheck">Good 7+ <small>(25)</small>
 										</label>
 									</li>
 									<li>
 										<label>
-											<input type="checkbox" class="icheck">Pleasant 6+ <small>(12)</small>
+											<input type="checkbox"  name="rating6" id="rating6" class="icheck">Pleasant 6+ <small>(12)</small>
 										</label>
 									</li>
 								</ul>
 							</div>
+							<button class="btn_1 outline float-end rounded" type="submit">Apply</button>
+						</form>
 						</div>
 						<!--/collapse -->
 					</div>
@@ -186,7 +189,7 @@
 							<div class="col plcname">5.0 Hrs</div>
 							<div class="col plcname"><h5>3,500/-</h5></div>
 							<div class="col plcname">
-								<form action="#" method="post"> 
+								<form action="passengerdetails.html?flightdet=F5206" method="post"> 
 								<button type="submit" class="btn_1 rounded full-width add_top_30">Book</button></form>
 							</div>
 						</div>
@@ -295,51 +298,7 @@
 	<!-- page -->
 	
 	<!-- Sign In Popup -->
-	<div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
-		<div class="small-dialog-header">
-			<h3>Sign In</h3>
-		</div>
-		<form>
-			<div class="sign-in-wrapper">
-				<a href="#0" class="social_bt facebook">Login with Facebook</a>
-				<a href="#0" class="social_bt google">Login with Google</a>
-				<div class="divider"><span>Or</span></div>
-				<div class="form-group">
-					<label>Email</label>
-					<input type="email" class="form-control" name="email" id="email">
-					<i class="icon_mail_alt"></i>
-				</div>
-				<div class="form-group">
-					<label>Password</label>
-					<input type="password" class="form-control" name="password" id="password" value="">
-					<i class="icon_lock_alt"></i>
-				</div>
-				<div class="clearfix add_bottom_15">
-					<div class="checkboxes float-left">
-						<label class="container_check">Remember me
-						  <input type="checkbox">
-						  <span class="checkmark"></span>
-						</label>
-					</div>
-					<div class="float-right mt-1"><a id="forgot" href="javascript:void(0);">Forgot Password?</a></div>
-				</div>
-				<div class="text-center"><input type="submit" value="Log In" class="btn_1 full-width"></div>
-				<div class="text-center">
-					Don’t have an account? <a href="register.html">Sign up</a>
-				</div>
-				<div id="forgot_pw">
-					<div class="form-group">
-						<label>Please confirm login email below</label>
-						<input type="email" class="form-control" name="email_forgot" id="email_forgot">
-						<i class="icon_mail_alt"></i>
-					</div>
-					<p>You will receive an email containing a link allowing you to reset your password to a new preferred one.</p>
-					<div class="text-center"><input type="submit" value="Reset Password" class="btn_1"></div>
-				</div>
-			</div>
-		</form>
-		<!--form -->
-	</div>
+
 	<!-- /Sign In Popup -->
 	
 	<div id="toTop"></div><!-- Back to top button -->
