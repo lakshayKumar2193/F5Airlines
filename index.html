@@ -83,19 +83,25 @@
 						<div class="row no-gutters custom-search-input-2">
 							<div class="col-md-3">
 								<div class="form-group">
-									<input class="form-control" type="text" placeholder="Origin" name="origin" id="origin" required>
+									<input class="form-control" list="places" placeholder="Origin" name="origin" id="origin" required>
+									<datalist id="places">
+										<option value="BLR (Bangalore)"></option>
+										<option value="DEL (Delhi)"></option>
+										<option value="PNQ (Pune)"></option>
+									</datalist>
 									<i class="icon_pin_alt"></i>
+									
 								</div>
 							</div>
 							<div class="col-md-3">
 								<div class="form-group">
-									<input class="form-control" type="text" placeholder="Destination" name="destination" id="destination" required>
+									<input class="form-control" list="places" placeholder="Destination" name="destination" id="destination" required>
 									<i class="icon_pin_alt"></i>
 								</div>
 							</div>
 							<div class="col-md-2">
 								<div class="form-group">
-									<input class="form-control" type="date" placeholder="Depart" name="depart" id="depart" required>
+									<input class="form-control inputdate" type="date" placeholder="Depart" name="depart" id="depart" required>
 									
 								</div>
 							</div>
@@ -106,11 +112,11 @@
 										<!-- Quantity Buttons -->
 										<div class="qtyButtons">
 											<label>Adults</label>
-											<input type="text" name="adults" id="adults" value="1" required>
+											<input type="text" name="adults" value="1" required>
 										</div>
 										<div class="qtyButtons">
 											<label>Childrens</label>
-											<input type="text" name="adults" id="adults" value="0" required>
+											<input type="text" name="child" value="0">
 										</div>
 									</div>
 								</div>
@@ -311,8 +317,15 @@
 						<div class="block-vertical"></div>
 						<div class="box_1">
 							<h3>Enjoy a GREAT travel with us</h3>
-							<p>Ius cu tamquam persequeris, eu veniam apeirian platonem qui, id aliquip voluptatibus pri. Ei mea primis ornatus disputationi. Menandri erroribus cu per, duo solet congue ut. </p>
-							<a href="#0" class="btn_1 rounded">Read more</a>
+							<p>"Life is Short.
+								Call in sick and book that
+								Last-minute Flight"
+								<p>
+								I am not afraid of FLYING,
+								I am afraid of NOT FLYING.
+								</p>
+							</p>
+							<a href="#" class="btn_1 rounded">Read more</a>
 						</div>
 					</div>
 				</div>
@@ -327,7 +340,8 @@
 			<div class="row">
 				<div class="col-lg-5 col-md-12 p-r-5">
 					<p><img src="img/logo.png" width="150" height="36" data-retina="true" alt=""></p>
-					<p>Short Content Here</p>
+					<p>Fly High with Fantastic Five world-class services ensuring the happiness of our customers in all aspects</p>
+					<p>Start your journey beyond sky with us</p>
 					<div class="follow_us">
 						<ul>
 							<li>Follow us</li>
