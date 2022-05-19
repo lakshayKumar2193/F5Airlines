@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Panagea - Premium site template for travel agencies, hotels and restaurant listing.">
+    <meta name="author" content="Ansonika">
+    <title>Panagea | Premium site template for travel agencies, hotels and restaurant listing.</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+	
+</head>
+
+<body>
+	
+	<div id="page">
+		
+		<header class="header menu_fixed">
+			<div id="preloader"><div data-loader="circle-side"></div></div><!-- /Page Preload -->
+			<div id="logo">
+				<a href="index.html">
+					<img src="img/logo.png" width="150" height="36" data-retina="true" alt="" class="logo_normal">
+					<img src="img/logo_sticky.png" width="150" height="36" data-retina="true" alt="" class="logo_sticky">
+				</a>
+			</div>
+			
+			<!-- /top_menu -->
+			<a href="#menu" class="btn_mobile">
+				<div class="hamburger hamburger--spin" id="hamburger">
+					<div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+					</div>
+				</div>
+			</a>
+			<nav id="menu" class="main-menu">
+				<ul>
+					<li><span><a href="index.html">Home</a></span></li>
+					<li><span><a href="pnrStatus.html">PNR Status</a></span></li>
+	
+	
+					<li><span><a href="#">User</a></span>
+						<ul>
+							<li><a href="userprofile.html">Profile</a></li>
+							<li><a href="usertrips.html">Bookings</a></li>
+							<li><a href="#" class="text-danger">Logout</a></li>
+							
+						</ul>
+					</li>
+					<li><span><a href="https://page.botpenguin.com/62847bcb9af888741185b976/62847b6f53e2b375f037cf68">Customer Support</a></span></li>
+	
+				
+	
+				</ul>
+			</nav>
+		</header>
+	<!-- /header -->
+	
+	<main>
+		<section class="hero_in contacts" style="height: 200px;">
+			<div class="wrapper">
+				<div class="container">
+					<h1 class="fadeInUp"><span></span>Flight Tracker F5-209</h1>
+				</div>
+			</div>
+		</section>
+
+        <div id="map" style="height: 1000px; width:100%;"></div>
+		<!--/hero_in-->
+
+		<!-- /bg_color_1 -->
+	</main>
+	<!--/main-->
+
+	<!--/footer-->
+	</div>
+	<!-- page -->
+	
+
+	<!-- /Sign In Popup -->
+	
+	<div id="toTop"></div><!-- Back to top button -->
+	
+	<!-- COMMON SCRIPTS -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/common_scripts.js"></script>
+    <script src="js/main.js"></script>
+	<script src="assets/validate.js"></script>
+	
+	<!-- SPECIFIC SCRIPTS -->
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/mapmarker.jquery.js"></script>
+	<script src="js/mapmarker_func.jquery.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    defer
+  ></script>
+  <script>
+
+function initMap() {
+
+
+  const totaltime = 3;
+
+  const loc1 = { lat: 13.032979106660513, lng: 77.61179343111266 };
+  const loc2 = { lat: 13.033221682619976, lng: 77.59285921205772};
+  loc1x = loc1['lat'];
+  loc1y = loc1['lng'];
+  loc2x = loc2['lat'];
+  loc2y = loc2['lng'];
+  x = (loc2x-loc1x)*110.574;
+  y = (loc2y-loc1y)*110.574;
+  distance = Math.sqrt((x*x)+(y*y));
+
+  console.log(distance);
+
+  movloc1 = loc1['lat'];
+  movloc2 = loc1['lng'];
+
+
+
+
+  maxtimes = parseInt((totaltime*3600)/5);
+
+  for(let i=0;i<maxtimes;i++){
+    setTimeout(function(){
+        console.log(i);
+
+
+    
+},5000);
+
+movloc1 = movloc1+1;
+movloc2 = movloc2+2;
+
+
+  }
+  console.log("TEST");
+}
+
+window.initMap = initMap;
+  </script>	
+	
+	
+</body>
+</html>
